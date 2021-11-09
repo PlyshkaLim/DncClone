@@ -1,0 +1,83 @@
+body {
+
+    border: 1px solid red;
+}
+
+.header {
+
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 280px 580px 280px;
+    grid-template-rows: 220px 260px 100px 50px;
+    grid-template-areas:
+            "navbar advertisement stocks"
+            "navbar current_offers current_offers"
+            "navbar ad_bonus build_pc"
+            "firms firms firms";
+    grid-gap: 20px;
+
+}
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 10px;
+}
+
+.navbar_item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+}
+
+.title {
+    color: #333;
+    font-size: 16px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #888;
+}
+
+.advertisement {
+    grid-area: advertisement;
+}
+
+.stocks {
+    grid-area: stocks;
+}
+
+.current_offers {
+    grid-area: current_offers;
+}
+
+.ad_bonus {
+    grid-area: ad_bonus;
+}
+
+.build_pc {
+    grid-area: build_pc;
+}
+
+.firms {
+    grid-area: firms;
+}
+
+.block {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    height: auto;
+    width: auto;
+
+    border-radius: 10px;
+}
