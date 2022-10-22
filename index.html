@@ -25,6 +25,7 @@
         </div>
         <div class="number">
             8-800-77-07-999 (c 05:00 до 00:00)
+            <span id="clock"></span>
         </div>
     </div>
     <div class="navigation">
@@ -37,7 +38,7 @@
                 <div class="buttons_item">Корзина</div>
             </div>
             <div class="button">
-                <button>Войти</button>
+                <button><a href="Account/myacc.php"> Личный кабинет </a></button>
             </div>
         </div>
     </div>
@@ -382,6 +383,36 @@
                     Покупателям
                 </div>
                 <div class="footer_main_nav_item_two">
+                    <a id="link">Адреса магазинов</a>
+
+                    <div id="modal" class="modal_hidden" data-modal="1">
+                        <svg id="closeModalButton" class="modal__cross" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
+                        </svg>
+                        <h3 class="modal__title">Наши магазины</h3>
+                        <div class="city_list">
+                            <div>Астана</div>
+                            <div>Алматы</div>
+                            <div>Кокшетау</div>
+                            <div>Щучинск</div>
+                            <div>Семей</div>
+                            <div>Усть-Каменогорск</div>
+                            <div>Караганда</div>
+                            <div>Сатпаев</div>
+                            <div>Темирау</div>
+                            <div>Костанай</div>
+                            <div>Рудный</div>
+                            <div>Аксу</div>
+                            <div>Ленинский</div>
+                            <div>Павлодар</div>
+                            <div>Павлодарское</div>
+                            <div>Экибастуз</div>
+                            <div>Петровавловск</div>
+                        </div>
+                    </div>
+
+
                     <a href="https://www.dns-shop.kz/help/useful-information/f1285927-1b83-491d-816b-bf68a0803f91/">
                         Как оформить заказ
                     </a>
@@ -459,5 +490,7 @@
         </div>
     </div>
 </footer>
+<div id="overlay" class="overlay_hidden"></div>
+<script src="index.js"></script>
 </body>
 </html>
